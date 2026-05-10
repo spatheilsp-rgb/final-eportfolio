@@ -1,0 +1,59 @@
+{
+  "education": [
+    {
+      "school": "Florida Institute of Technology",
+      "degree": "Master of Science in Computer Information Systems supported by College Role Clerical with focus on research and development "
+    },
+    {
+      "school": "La Roche University",
+      "degree": "Bachelors in Computer Science with Strong technical coursework foundation supported by peer tutoring"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Network Engineer",
+      "company": "Akrivis Solutions Inc",
+      "dates": "August 2023 to December 2024",
+      "summary": "Led network engineering and security efforts by supporting servers, troubleshooting hardware and software issues, monitoring core network configurations, and maintaining Layer 2 and Layer 3 Cisco environments. Worked with routing protocols such as OSPF, BGP, and MPLS while helping improve system reliability, performance, and uptime through proactive maintenance and cross-functional collaboration."
+    },
+    {
+      "title": "Java Developer",
+      "company": "Support Enigma",
+      "dates": "December 2022 to August 2023",
+      "summary": "Contributed to software development and SDLC support by building and improving client-facing systems with Java, Java EE, Enterprise Java Beans, JavaScript, HTML, JSP, and CSS. Helped enhance client reporting systems, supported scrum delivery cycles, collaborated with stakeholders, and provided technical consultation related to project progress and solution functionality."
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Reliance Insurance",
+      "dates": "May 2022 to December 2022",
+      "summary": "Standardized and analyzed client data, tracked departmental performance, created reports and presentations, and applied statistical methods to identify useful trends and insights. Supported reporting accuracy through collaboration with cross-functional teams and contributed to business growth by helping translate data into clearer decisions and measurable outcomes."
+    }
+
+  ],
+  "skillGroups": [
+    {
+      "category": "Programming",
+      "items": ["Java", "Python", "JavaScript"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["React", "Vite", "HTML", "CSS", "JSP"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Express", "Java EE", "Enterprise Java Beans", "REST APIs"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MongoDB", "Mongoose", "MySQL"]
+    },
+    {
+      "category": "Networking and Systems",
+      "items": ["Cisco Switching", "OSPF", "BGP", "MPLS", "System Troubleshooting", "Server Support"]
+    },
+    {
+      "category": "Data and Reporting",
+      "items": ["Data Analysis", "Reporting", "Statistical Analysis", "Data Standardization"]
+    }
+  ]
+}

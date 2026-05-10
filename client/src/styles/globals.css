@@ -1,0 +1,549 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling for route/page transitions */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main page background and default text styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #89a2f0 0%, #9ab0f4 100%);
+    color: #111;
+}
+
+/* Shared page width and spacing */
+.page-shell {
+    width: min(1150px, 92%);
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+/* Small uppercase section label */
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #214f7a;
+    margin-bottom: 0.4rem;
+}
+
+/* Top hero container */
+.hero-card {
+    width: min(1150px, 92%);
+    margin: 1.2rem auto 2.2rem auto;
+    padding: 2rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #153b9a, #3f79ff);
+    color: white;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Hero layout with text and image */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.6fr 0.9fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Main heading in hero */
+.hero-text-area h1 {
+    margin: 0.4rem 0 0.9rem 0;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.1;
+}
+
+/* Main hero intro text */
+.hero-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 760px;
+    margin-bottom: 0.8rem;
+}
+
+/* Supporting hero text */
+.hero-subtext {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    max-width: 760px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+/* Navigation row inside hero */
+.hero-nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+/* Shared rounded navigation buttons */
+.nav-button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    padding: 0.85rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect for navigation buttons */
+.nav-button:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-2px);
+}
+
+/* Wrapper for hero image */
+.hero-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Portrait-style headshot image */
+.hero-headshot {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 28px;
+    border: 4px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Shared section spacing */
+.section-block {
+    padding: 2.3rem 0;
+}
+
+/* Section heading wrapper */
+.section-heading {
+    margin-bottom: 1.5rem;
+}
+
+/* Main section titles */
+.section-heading h2 {
+    margin: 0.35rem 0 0.8rem 0;
+    font-size: 2.2rem;
+}
+
+/* Shared card style */
+.content-card {
+    background: rgba(249, 249, 252, 0.96);
+    border-radius: 22px;
+    padding: 1.4rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Better paragraph spacing in larger info cards */
+.about-card p,
+.resume-summary-card p,
+.contact-info-card p {
+    line-height: 1.7;
+}
+
+/* Home page overview card layout */
+.home-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    margin-top: 1.3rem;
+}
+
+/* Small home summary cards */
+.overview-card {
+    background: rgba(249, 249, 252, 0.97);
+    border-radius: 22px;
+    padding: 1.45rem;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.09);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+/* Hover effect for home cards */
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.14);
+}
+
+/* Home card headings */
+.overview-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.35rem;
+}
+
+/* Home card body text */
+.overview-card p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+/* Smaller action button used inside light cards */
+.mini-link-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #153b9a, #3f79ff);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for smaller action button */
+.mini-link-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Home highlight strip layout */
+.home-highlight-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Highlight summary box */
+.highlight-box {
+    background: linear-gradient(135deg, rgba(249, 249, 252, 0.98), rgba(235, 241, 255, 0.98));
+    border-radius: 20px;
+    padding: 1.2rem;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Big keyword in highlight box */
+.highlight-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #173f9f;
+    margin-bottom: 0.35rem;
+}
+
+/* Smaller explanation under highlight keyword */
+.highlight-label {
+    display: block;
+    color: #2a2a2a;
+    font-weight: 600;
+}
+
+/* NASA feature card shown above the MongoDB project cards */
+.nasa-feature-card {
+    display: grid;
+    grid-template-columns: 1.15fr 0.95fr;
+    gap: 1.5rem;
+    align-items: center;
+    background: rgba(249, 249, 252, 0.97);
+    border-radius: 24px;
+    padding: 1.5rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.09);
+}
+
+/* Left text section of the NASA feature */
+.nasa-feature-text h3 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.9rem;
+}
+
+/* NASA item title */
+.nasa-title {
+    margin: 0.2rem 0;
+    font-size: 1.35rem;
+    line-height: 1.35;
+}
+
+/* NASA date line */
+.nasa-date {
+    margin: 0 0 0.35rem 0;
+    color: #4b5c7d;
+    font-size: 0.94rem;
+}
+
+/* NASA image credit line */
+.nasa-credit {
+    margin: 0 0 0.8rem 0;
+    color: #5a5a5a;
+    font-size: 0.92rem;
+    font-style: italic;
+}
+
+/* NASA explanation text */
+.nasa-description {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #1f1f1f;
+}
+
+/* Wrapper around NASA media */
+.nasa-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NASA preview image */
+.nasa-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* NASA video preview if APOD returns a video */
+.nasa-video {
+    width: 100%;
+    min-height: 360px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Button row reused under NASA text */
+.project-button-row {
+    display: flex;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    margin-top: 0.3rem;
+}
+
+/* Summary panel at top of resume page */
+.resume-hero-panel {
+    background: linear-gradient(135deg, rgba(20, 59, 154, 0.95), rgba(63, 121, 255, 0.92));
+    color: white;
+    border-radius: 26px;
+    padding: 1.5rem;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Small uppercase label in resume summary */
+.resume-summary-label {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    opacity: 0.9;
+}
+
+/* Resume summary text */
+.resume-summary-text {
+    margin: 0;
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+/* Main resume two-column layout */
+.resume-main-grid {
+    display: grid;
+    grid-template-columns: 0.95fr 1.25fr;
+    gap: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+/* Education and experience column card */
+.resume-column-card {
+    background: rgba(249, 249, 252, 0.96);
+    border-radius: 24px;
+    padding: 1.4rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Resume column headings */
+.resume-column-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.65rem;
+}
+
+/* Single education or experience block */
+.resume-block,
+.experience-item {
+    margin-bottom: 1.2rem;
+}
+
+/* Removes extra space from final block */
+.experience-item:last-child,
+.resume-block:last-child {
+    margin-bottom: 0;
+}
+
+/* Top section inside each experience item */
+.experience-top-line {
+    margin-bottom: 0.35rem;
+}
+
+/* School or job title */
+.resume-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+/* Company name next to job title */
+.resume-company {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Resume body text */
+.resume-text {
+    margin: 0.35rem 0 0 0;
+    line-height: 1.65;
+    color: #222;
+}
+
+/* Resume date line */
+.resume-dates {
+    margin: 0.3rem 0 0 0;
+    color: #4b5c7d;
+    font-size: 0.95rem;
+}
+
+/* Wrapper above skill cards */
+.resume-skills-section {
+    margin-top: 0.5rem;
+}
+
+/* Skill section title */
+.skills-section-title {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Skills grid layout */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+/* Single grouped skill card */
+.skill-group-card {
+    background: rgba(249, 249, 252, 0.96);
+    border-radius: 22px;
+    padding: 1.3rem;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Skill card heading */
+.skill-group-card h3,
+.skill-group-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    font-size: 1.35rem;
+}
+
+/* Skill tag list */
+.skill-pill-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+}
+
+/* Individual skill tag */
+.skill-pill-list li {
+    background: #e5ebff;
+    color: #213b73;
+    padding: 0.42rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.87rem;
+    font-weight: 600;
+}
+
+/* Contact section layout */
+.contact-card {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* Link styling inside the contact info card */
+.contact-info-card a {
+    color: #224ea4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Contact link hover effect */
+.contact-info-card a:hover {
+    text-decoration: underline;
+}
+
+/* Availability section spacing */
+.availability-block {
+    margin-top: 1.25rem;
+}
+
+/* Footer layout */
+.footer {
+    text-align: center;
+    padding: 2.2rem 1rem 2.8rem 1rem;
+    color: #244161;
+}
+
+/* Footer paragraph spacing */
+.footer p {
+    margin: 0.35rem 0;
+}
+
+/* Tablet layout changes */
+@media (max-width: 900px) {
+    .hero-content,
+    .home-overview-grid,
+    .home-highlight-strip,
+    .nasa-feature-card,
+    .resume-main-grid,
+    .skills-grid,
+    .contact-card {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image-wrap {
+        justify-content: flex-start;
+    }
+}
+
+/* Mobile layout changes */
+@media (max-width: 768px) {
+    .hero-card {
+        padding: 1.5rem;
+    }
+
+    .hero-text-area h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-nav {
+        justify-content: flex-start;
+    }
+
+    .hero-headshot {
+        width: 200px;
+        height: 270px;
+    }
+
+    .section-heading h2 {
+        font-size: 1.8rem;
+    }
+}
