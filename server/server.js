@@ -19,12 +19,8 @@ const app = express()
 const PORT = process.env.PORT || 3001
 
 // Enable CORS so the frontend can access the backend
-app.use(cors({
-    origin: [
-        process.env.CLIENT_URL,
-        'http://localhost:5173'
-    ].filter(Boolean)
-}))
+// Enable CORS so the frontend can access the backend
+app.use(cors())
 
 // Parse JSON request bodies
 app.use(express.json())
